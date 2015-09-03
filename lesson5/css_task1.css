@@ -1,0 +1,51 @@
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+
+nav{
+    background: #1aa4ff;
+}
+menu{
+    width: 900px;
+    margin: 0 auto;
+}
+
+li{
+    display: inline-block;
+    list-style-type: none;
+    margin:0;
+    padding:10px 15px;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-family: Oswald, sans-serif;
+    font-size: 18px;
+}
+li:hover{
+    background: #eeeeee;
+}
+li:hover a{
+    color: #aeafbd;
+}
+.travel{
+    position: relative;
+    margin-bottom: 0;
+}
+.submenu{
+    position: absolute;
+    display: none;
+}
+.travel:hover  .submenu{
+    display: block;
+    background:  #eeeeee;
+
+
+}
+.travel .submenu li{
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+.submenu li a{
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+}
