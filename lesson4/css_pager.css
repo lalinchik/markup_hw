@@ -1,0 +1,47 @@
+.pager{
+    width: 450px;
+    background: #fafafa;
+}
+.pager a{
+    font-family: Times, sans-serif;
+    color: #a13ad1;
+    font-size: 7px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.number{
+    display: inline-block;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    min-width: 20px;
+    padding-bottom: 6px;
+    padding-top: 6px;
+    margin: 0;
+    text-align: center;
+
+
+}
+.hellip{
+    vertical-align: bottom;
+    display: inline-block;
+    margin: 0 5px;
+}
+.arrow{
+    display: inline-block;
+    transform: rotate(180deg);
+}
+.first{
+    margin-right: 20px;
+    margin-left: 10px;
+}
+.prev{
+    margin-right: 10px;
+}
+.next{
+    margin-left: 10px;
+    margin-right: 20px;
+}
+.pager a:hover{
+    background:  #a13ad1;
+    color: #ffffff;
+}
