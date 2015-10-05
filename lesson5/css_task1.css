@@ -1,10 +1,15 @@
 @import url(http://fonts.googleapis.com/css?family=Oswald);
+body{
+    margin: 0;
 
-nav{
+}
+.main-nav{
     background: #1aa4ff;
+    position: relative;
+
 }
 menu{
-    width: 900px;
+    min-width: 900px;
     margin: 0 auto;
 }
 
@@ -14,8 +19,9 @@ li{
     margin:0;
     padding:10px 15px;
 }
-a{
+.main-a{
     text-decoration: none;
+    text-transform: uppercase;
     color: white;
     font-family: Oswald, sans-serif;
     font-size: 18px;
@@ -24,28 +30,30 @@ li:hover{
     background: #eeeeee;
 }
 li:hover a{
-    color: #aeafbd;
+    color: #a0a9ba;
 }
-.travel{
-    position: relative;
-    margin-bottom: 0;
-}
-.submenu{
+
+li .submenu-wrapper{
     position: absolute;
+    left: 0;
+    right: 0;
+    top: 46px;
     display: none;
-}
-.travel:hover  .submenu{
-    display: block;
     background:  #eeeeee;
 
-
 }
-.travel .submenu li{
-    display: inline-block;
+.travel:hover  .submenu-wrapper{
+    display: block;
+}
+.submenu-wrapper li{
     padding: 0;
     margin: 0;
+    padding-left: 15px;
+
 }
-.submenu li a{
-    font-size: 12px;
-    font-family: 'Open Sans', sans-serif;
+.submenu-wrapper li a{
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Arial', sans-serif;
+    color: #a0a9ba;
 }
