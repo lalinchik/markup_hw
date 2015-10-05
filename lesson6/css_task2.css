@@ -1,0 +1,77 @@
+body{
+    height: 315px;
+    width: 1400px;
+    background: url("background.png") no-repeat;
+}
+.header{
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #3170a8;
+    text-align: center;
+    margin-top:49px;
+    margin-bottom: 42px;
+}
+.header span{
+    color: #ee8129;
+}
+.feedbacks{
+    display: flex;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    margin: 0 22px;
+}
+.ava{
+    margin-right: 25px;
+}
+.text{
+    width: 365px;
+    height: 99px;
+    background: #f7f7f7;
+    position: relative;
+
+}
+.text:before{
+    content: '';
+    position: absolute;
+    left: -15px;
+    top: calc(50% - 15px);
+
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right:15px solid #f7f7f7;
+}
+.name, .customer{
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 13px;
+    font-style: italic;
+    color: #3070a8;
+    display: inline-block;
+    margin-bottom: 0;
+}
+.name{
+   padding-left: 17px;
+}
+.customer{
+    float: right;
+    padding-right: 20px;
+}
+
+.paragraph{
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 13px;
+    color: #666;
+    text-align: justify;
+    padding: 0 40px 25px 17px;
+}
+.point{
+    font-family: "Arial", sans-serif;
+    font-size: 13px;
+    color: #666;
+    text-align: center;
+    margin: 0;
+}
