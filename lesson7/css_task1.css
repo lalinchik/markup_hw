@@ -1,0 +1,82 @@
+.sivtsev{
+    width: 402px;
+    height: 1120px;
+    margin: 0 auto;
+    text-align: justify;
+    color: #555555;
+
+    font-family: "Arial", sans-serif;
+}
+.sivtsev p{
+    margin: 0;
+}
+.sivtsev p:after{
+    content:"";
+    display:inline-block;
+    width:100%;
+    margin: 0;
+}
+.uline{
+    border-bottom: solid 2px #555555;
+    margin: auto;
+    margin-top: -3px;
+    margin-bottom: 17px;
+}
+
+.sight01{
+    font-size: 100px;
+    height: 170px;
+    text-shadow: 0 0 7px #555555;
+}
+.sight02{
+    font-size: 90px;
+    height: 150px;
+    text-shadow: 0 0 7px #555555;
+}
+.sight03{
+    font-size: 80px;
+    height: 145px;
+    text-shadow: 0 0 7px #555555;
+
+}
+.sight04{
+    font-size: 70px;
+    height: 125px;
+    text-shadow: 0 0 7px #555555;
+}
+.sight05{
+    font-size: 60px;
+    height: 113px;
+    text-shadow: 0 0 7px #555555;
+}
+.sight06{
+    font-size: 50px;
+    height: 100px;
+    text-shadow: 0 0 7px #555555;
+}
+.sight07{
+    font-size: 40px;
+    height: 85px;
+    text-shadow: 0 0 7px #555555;
+}
+.sight08{
+    font-size: 30px;
+    height: 70px;
+    text-shadow: 0 0 7px #555555;
+}
+.sight09{
+    font-size: 20px;
+    height: 56px;
+}
+.sight10 {
+    font-size: 15px;
+    height: 35px;
+}
+.sight15{
+    font-size: 11px;
+    height: 45px;
+}
+
+.sight20{
+    font-size: 9px;
+}
