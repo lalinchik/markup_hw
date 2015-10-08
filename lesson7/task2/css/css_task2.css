@@ -1,0 +1,323 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
+body{
+    width: 1400px;
+    margin: 0;
+}
+.container{
+    width: 1020px;
+    margin: 0 auto;
+}
+.clearfix:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+/*---------------------------------------------------------Header-----------------------------------------------------*/
+
+.header_hight{
+    height: 73px;
+}
+
+.logo{
+    float: left;
+}
+h1{
+    font-family: 'Source Sans Pro', sans-serif;;
+    font-size: 36px;
+    color: #ee8129;
+}
+.c_name{
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #3070a8;
+}
+
+.main-navigator{
+    float: right;
+}
+.main-navigator ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.main-navigator li{
+    display: inline-block;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    vertical-align: top;
+}
+.main-navigator .link{
+    display: block;
+    text-decoration: none;
+    color: #3070a8;
+    padding: 53px 17px 36px 17px;
+}
+
+.main-navigator .active{
+    border-bottom: solid 4px #3070a8;
+    color: #3070a8;
+}
+
+/*--------------------------------------------banner------------------------------------------------------------------*/
+.banner{
+    background: #023193 url("../img/background_banner.png") no-repeat;
+    height: 585px;
+    position: relative;
+}
+.par1{
+    font-family: FuturaBT, sans-serif;
+    color: #fff;
+    font-size: 36px;
+    text-align: center;
+    padding: 144px 0 0 0;
+}
+.par1 span{
+    font-size: 48px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+.par2{
+    font-family: Calibri, sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    color: #fff;
+    text-shadow: 0 2px rgba(0,0,0,.26);
+    text-align: center;
+    width: 582px;
+    padding: 0 213px;
+}
+
+.banner_button{
+    position: absolute;
+    left: 570px;
+    bottom: 108px;
+    width: 247px;
+    height: 58px;
+    background: transparent;
+    border: solid 1px #919fab;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #fff;
+
+
+}
+/*-------------------------------------------prices-------------------------------------------------------------------*/
+.main_price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:40px 0 73px 0;
+}
+.title_price{
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #41525c;
+    text-align: center;
+    margin-top: 85px;
+}
+.container_price{
+    width: 288px;
+    height: 460px;
+    border: 4px solid #ee8129;
+    border-radius: 5px;
+    font-family: "Trebuchet MS";
+    -webkit-box-shadow: 0 0 13px #cbe2ef;
+    -moz-box-shadow: 0 0 13px #cbe2ef;
+    box-shadow: 0 0 13px #cbe2ef;
+}
+.container1_price, .container2_price{
+    width: 288px;
+    height: 440px;
+    border: 1px solid #e8eaec;
+    border-radius: 5px;
+    font-family: "Trebuchet MS";
+}
+
+.header_price{
+    background: #ee8129;
+    color: #ffffff;
+    text-transform: uppercase;
+    height: 50px;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 24px;
+
+}
+.header1_price{
+    border-radius: 5px 0 0 0;
+    background: #37c2d3;
+    height: 41px;
+    padding-top: 23px;
+}
+.header2_price{
+    border-radius: 0 5px 0 0;
+    background: #1cb79a;
+    height: 41px;
+    padding-top: 23px;
+}
+h2{
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #3f4042;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 16px;
+}
+.price{
+    position: relative;
+}
+sup{
+    position: absolute;
+    left:72px;
+    top: 5px;
+    font-size: 23px;
+    font-weight: bold;
+    color: #35495a;
+}
+strong{
+    font-size: 72px;
+    text-transform: uppercase;
+    color: #35495a;
+    text-align: center;
+    margin-left: 88px;
+}
+
+sub{
+    position: absolute;
+    right: 56px;
+    bottom: 3px;
+    font-size: 18px;
+    color: #35495a;
+
+
+}
+.list{
+    font-size: 15px;
+    line-height: 34px;
+    color: #888c94;
+    list-style: none;
+    margin-left: 14px;
+    padding-left: 0;
+    margin-top: 25px;
+}
+.list li{
+    background: #edf5fd url('../img/marker_list.png')  no-repeat 33px 9px;
+    width: 196px;
+    height: 33px;
+    margin-bottom: 1px;
+    padding-left: 64px;
+
+
+}
+.list li:nth-child(2n){
+    background-color: #f5f5f6;
+
+
+}
+.list li:last-child{
+    margin-bottom: 18px;
+}
+.button_price{
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: #ee8129;
+    border: none;
+    border-bottom: 3px solid #b3560b;
+    border-radius: 5px;
+    width: 252px;
+    height: 41px;
+    margin: 0 18px;
+}
+.button1_price{
+    background: #3371a6;
+    border-bottom: 3px solid #16436a;
+}
+/*------------------------------------------feedbacks------------------------------------------------------------------*/
+
+.feedback_clients{
+    display: flex;
+    height: 315px;
+    background: url("../img/background.png") no-repeat;
+}
+.header_feedbacks{
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #3170a8;
+    text-align: center;
+    margin-top:49px;
+    margin-bottom: 42px;
+}
+.header_feedbacks span{
+    color: #ee8129;
+}
+.feedbacks{
+    display: flex;
+    justify-content: center;
+}
+.container_feedbacks{
+    display: flex;
+    margin: 0 22px;
+}
+.ava{
+    margin-right: 25px;
+}
+.text{
+    width: 365px;
+    height: 99px;
+    background: #f7f7f7;
+    position: relative;
+
+}
+.text:before{
+    content: '';
+    position: absolute;
+    left: -15px;
+    top: calc(50% - 15px);
+
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right:15px solid #f7f7f7;
+}
+.name, .customer{
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 13px;
+    font-style: italic;
+    color: #3070a8;
+    display: inline-block;
+    margin-bottom: 0;
+}
+.name{
+    padding-left: 17px;
+}
+.customer{
+    float: right;
+    padding-right: 20px;
+}
+
+.paragraph{
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 13px;
+    color: #666;
+    text-align: justify;
+    padding: 0 40px 25px 17px;
+}
+.point{
+    font-family: "Arial", sans-serif;
+    font-size: 13px;
+    color: #666;
+    text-align: center;
+    margin: 0;
+}
