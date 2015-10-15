@@ -15,13 +15,13 @@ body{
 /*---------------------------------------------------------Header-----------------------------------------------------*/
 
 .header_hight{
-    height: 73px;
+    height: 71px;
 }
 
 .logo{
     float: left;
 }
-h1{
+.logo h1{
     font-family: 'Source Sans Pro', sans-serif;;
     font-size: 36px;
     color: #ee8129;
@@ -104,6 +104,87 @@ h1{
 
 
 }
+/*-------------------------------------------services-----------------------------------------------------------------*/
+.feature-item{
+    float: left;
+    height: 335px;
+    width: 306px;
+    margin-right: 50px;
+}
+.feature-item:last-child{
+    float: right;
+    margin-right: 0;
+}
+.services_title{
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #41525c;
+    text-align: center;
+    margin: 50px 0 59px 0;
+}
+
+.feature-item img{
+    display: inline-block;
+    margin-left: 86px;
+}
+
+.feature-title{
+    font-family: FuturaBT , sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #3070a8;
+    text-align: center;
+    margin-top: 25px;
+}
+
+
+.feature-text{
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    line-height: 25px;
+    color: #999;
+    text-align: center;
+    margin-top: 17px;
+
+}
+/*-------------------------------------------content------------------------------------------------------------------*/
+
+.content_block{
+    background: url("../img/background_content.png") no-repeat;
+    height: 577px;
+    margin-top: 60px;
+}
+.content_title{
+    font-family: Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 23px;
+    line-height: 38px;
+    text-transform: uppercase;
+    color: #ee8129;
+    text-align: justify;
+    margin: 0 343px 10px 0;
+    padding-top: 87px;
+}
+.title_content_list{
+    font-family: "Open Sans", sans-serif;
+    font-size: 19px;
+    font-style: italic;
+    color: #fff;
+}
+.content_list li{
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    line-height: 30px;
+    color: #9d9d9d;
+    margin: 0 378px 30px 0;
+    list-style-type: disc;
+}
+.content_list li:nth-child(2){
+    color: #3070a8;
+}
+
 /*-------------------------------------------prices-------------------------------------------------------------------*/
 .main_price{
     display: flex;
@@ -125,7 +206,7 @@ h1{
     height: 460px;
     border: 4px solid #ee8129;
     border-radius: 5px;
-    font-family: "Trebuchet MS";
+    font-family: "Trebuchet MS", sans-serif;
     -webkit-box-shadow: 0 0 13px #cbe2ef;
     -moz-box-shadow: 0 0 13px #cbe2ef;
     box-shadow: 0 0 13px #cbe2ef;
@@ -135,7 +216,7 @@ h1{
     height: 440px;
     border: 1px solid #e8eaec;
     border-radius: 5px;
-    font-family: "Trebuchet MS";
+    font-family: "Trebuchet MS", sans-serif;
 }
 
 .header_price{
@@ -144,7 +225,6 @@ h1{
     text-transform: uppercase;
     height: 50px;
     font-size: 24px;
-    text-transform: uppercase;
     font-weight: bold;
     text-align: center;
     padding-top: 24px;
