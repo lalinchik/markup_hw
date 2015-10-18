@@ -431,13 +431,15 @@ sub{
 .email{
     background: url("../img/icon_email.png") no-repeat 0 9px;
 }
-.contacts{
-    background: url("../img/icon_fb.png") no-repeat 191px 267px,
-                url("../img/icon_tw.png") no-repeat 259px 267px,
-                url("../img/icon_in.png") no-repeat 330px 267px;
+.fb{
+    margin-right: 16px;
 }
+.tw{
+    margin-right: 16px;
+}
+
 /*---------------------------------------------------------footer-----------------------------------------------------*/
-.footer{
+footer{
     height: 105px;
     background: #3070a8;
 }
