@@ -326,7 +326,7 @@ sub{
 
 .feedback_clients{
     display: flex;
-    height: 315px;
+    height: 314px;
     background: url("../img/background.png") no-repeat;
 }
 .header_feedbacks{
@@ -400,4 +400,60 @@ sub{
     color: #666;
     text-align: center;
     margin: 0;
+}
+/*---------------------------------------------------------contacts---------------------------------------------------*/
+.contacts{
+    height: 331px;
+}
+.coordinates{
+    float: left;
+    width: 316px;
+    margin-left: 190px;
+}
+.coordinates p{
+    font-family: OpenSans, sans-serif;
+    font-size: 14px;
+    color: #666;
+    line-height: 31px;
+    padding-left: 60px;
+}
+.map{
+    float: right;
+    width: 705px;
+}
+.address{
+    margin-top: 42px;
+    background: url("../img/icon_address.png") no-repeat 4px 3px;
+}
+.mobile{
+    background: url("../img/icon_mob.png") no-repeat 3px 0;
+}
+.email{
+    background: url("../img/icon_email.png") no-repeat 0 9px;
+}
+.contacts{
+    background: url("../img/icon_fb.png") no-repeat 191px 267px,
+                url("../img/icon_tw.png") no-repeat 259px 267px,
+                url("../img/icon_in.png") no-repeat 330px 267px;
+}
+/*---------------------------------------------------------footer-----------------------------------------------------*/
+.footer{
+    height: 105px;
+    background: #3070a8;
+}
+.copyright, .design{
+    font-family: OpenSans, sans-serif;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+}
+.cn{
+    font-weight: bold;
+}
+.ig{
+    font-weight: bold;
+    color: #1d1c1c;
+}
+.copyright{
+    padding-top: 28px;
 }
