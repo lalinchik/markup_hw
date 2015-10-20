@@ -1,11 +1,14 @@
 .search-engine{
     width: 50%;
-    display: flex;
     margin: 0 auto;
     background: #ffcc66;
     height: 54px;
     position: relative;
-    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
 }
 .search-engine:after{
     content: "";
@@ -19,28 +22,31 @@
     border-left: 12px solid #ffcc66;
 
 }
+.wrapper{
+    display: flex;
+    width: 100%;
+}
 
 .search-query{
-    flex: 1;
+    flex:2;
     height: 23px;
     border: solid 1px #f3f3f3;
     margin: 5px 5px 0 5px;
 }
 .find{
     font-size: 16px;
-    height: 27px;
+    height: 26px;
     width: 67px;
     background: #d8d8d8;
     border: solid 1px #987f4c;
     border-radius: 1px;
     margin-top: 5px;
+    margin-right: 12px;
 }
-.flag{
-    display: block;
-}
+
 .flag-text{
-    display: block;
     font-family: "Arial", sans-serif;
     text-transform: lowercase;
     font-size: 13px;
+    vertical-align: top;
 }
