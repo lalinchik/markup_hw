@@ -53,4 +53,11 @@ h2 {
     display: block;
     background: #3aadf5;
 }
+#id1{
+    display: none;
+    z-index: 1;
+    position: absolute;
+    top:0;
+    left: 0;
+}
    

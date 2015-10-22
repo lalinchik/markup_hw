@@ -4,6 +4,20 @@
     <meta charset="UTF-8">
     <title>Lesson10</title>
     <link rel="stylesheet" href="css.css">
+    <script>
+        function toggleZoom(el_id) {
+            var child = document.getElementById(el_id);
+            if (child) {
+                if (child.style.display != 'block') {
+                    child.style.display = 'block';
+
+                }
+                else {
+                    child.style.display = 'none';
+                }
+            }
+        }
+    </script>
 </head>
 <body>
 <h1>Showcase your work like a pro.</h1>
@@ -14,10 +28,16 @@
     <div class="img img1"><img src="img/img1-1.png">
 
         <div class="preview">
-            <img class="zoom" src="img/zoom.png">
+            <img onclick="toggleZoom('id1');" class="zoom"  src="img/zoom.png">
+
             <img class="link" src="img/link.png">
         </div>
+        <img onclick="toggleZoom('id1');" id="id1" src="img/img1.png">
     </div>
+
+
+
+
     <div class="img img2"><img src="img/img2.png">
 
         <div class="preview">
