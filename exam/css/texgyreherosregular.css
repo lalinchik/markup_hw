@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'texgyreherosregular';
+    src: url('../fonts/texgyreheros-regular-webfont.eot');
+    src: url('../fonts/texgyreheros-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/texgyreheros-regular-webfont.woff') format('woff'),
+    url('../fonts/texgyreheros-regular-webfont.ttf') format('truetype'),
+    url('../fonts/texgyreheros-regular-webfont.svg#texgyreherosregular') format('svg');
+    font-weight: 100;
+    font-style: normal;
+
+}
