@@ -7,9 +7,12 @@
     <link rel="stylesheet" href="../css/texgyreherosregular.css">
 </head>
 <body>
-<header>
-    <div class="logo"></div>
-    <h1 class="company-name">ABC university</h1>
+<header class="main-header">
+    <div class="brand">
+        <div class="logo"></div>
+        <h1 class="company-name">ABC university</h1>
+    </div>
+
     <div class="social-networks">
         <p>Connect:</p>
         <a class="facebook" href="#"></a>
@@ -21,15 +24,18 @@
 <!-----------------------------------------------banner---------------------------------------------------------------->
 <section class="banner">
     <h2>Welcome</h2>
+
     <p>College students can publish their couse notes, study together, build their acdemic reputations....</p>
 </section>
 <!-----------------------------------------------form------------------------------------------------------------------>
 <section class="form">
     <h2>Get Started</h2>
+
     <form class="login-form" action="/echo" method="post">
         <div class="style-select">
-        <select size="1" name="course[]">
-            <option disabled>Select Course</select>
+            <select size="1" name="course[]">
+                <option disabled>Select Course
+            </select>
         </div>
         <input type="text" class="first_name" name="first_name" placeholder="First Name" required>
         <input type="text" class="last_name" name="last_name" placeholder="Last Name" required>
@@ -43,87 +49,119 @@
 <!-----------------------------------------------about----------------------------------------------------------------->
 <section class="about">
     <h2>ABC University</h2>
+
     <p>In 1865, Ezra Cornell founded an institution "where any person can find instruction in any study."
-        From the beginning, all students were welcome, regardless of race, gender, ideology, or socioeconomic status.</p>
+        From the beginning, all students were welcome, regardless of race, gender, ideology, or socioeconomic
+        status.</p>
+
     <p>Today, we invite you to join our talented and diverse students and accessible faculty who, together,
         form a living and learning community unmatched in its breadth of opportunities.</p>
 </section>
 <!-----------------------------------------------good point------------------------------------------------------------>
 <section class="good-point">
     <h1>Why we are best</h1>
-    <div class="point-column point-column1">
+
+    <div class="point-column">
         <img class="point-img" src="../img/good-point/point1.png">
-        <h2 class="title">Quality environment</h2>
-        <p>We guide our students to find their own academic paths by helping them to reason, analyze and
-            understand in unprecedented ways. The undergraduate experience at Duke is characterized by a
-            spirit of academic energy, exploration and challenge.</p>
-        <div class="point-view">
-            <a class="point-view-link" href="#">View</a>
+
+        <div class="description-benefits">
+            <h2 class="title">Quality environment</h2>
+
+            <p>We guide our students to find their own academic paths by helping them to reason, analyze and
+                understand in unprecedented ways. The undergraduate experience at Duke is characterized by a
+                spirit of academic energy, exploration and challenge.</p>
+
+            <div class="point-view">
+                <a class="point-view-link" href="#">View</a>
+            </div>
         </div>
     </div>
 
-    <div class="point-column point-column2">
+    <div class="point-column">
         <img class="point-img" src="../img/good-point/point2.png">
-        <h2 class="title">Quality programs</h2>
-        <p>We are a research university with resources to connect undergraduate education to the processes
-            of inquiry and discovery. Duke students explore ideas by collaborating directly with our exceptional
-            faculty in a program of study that focuses on interdisciplinary exploration</p>
-        <div class="point-view">
-            <a class="point-view-link" href="#">View</a>
+
+        <div class="description-benefits">
+            <h2 class="title">Quality programs</h2>
+
+            <p>We are a research university with resources to connect undergraduate education to the processes
+                of inquiry and discovery. Duke students explore ideas by collaborating directly with our exceptional
+                faculty in a program of study that focuses on interdisciplinary exploration</p>
+
+            <div class="point-view">
+                <a class="point-view-link" href="#">View</a>
+            </div>
         </div>
     </div>
 
-    <div class="point-column point-column3">
-        <img  class="point-img" src="../img/good-point/point3.png">
-        <h2 class="title">Excellent teachers</h2>
-        <p>A student's education doesn't end at the classroom door. We provide an incredible variety of
-            opportunities for students to enhance and supplement in-class learning with hands-on experiences,
-            service in the community—both locally and globally—and development of leadership skills.</p>
-        <div class="point-view">
-            <a class="point-view-link" href="#">View</a>
+    <div class="point-column">
+        <img class="point-img" src="../img/good-point/point3.png">
+
+        <div class="description-benefits">
+            <h2 class="title">Excellent teachers</h2>
+
+            <p>A student's education doesn't end at the classroom door. We provide an incredible variety of
+                opportunities for students to enhance and supplement in-class learning with hands-on experiences,
+                service in the community—both locally and globally—and development of leadership skills.</p>
+
+            <div class="point-view">
+                <a class="point-view-link" href="#">View</a>
+            </div>
         </div>
     </div>
 </section>
 <!-----------------------------------------------feedback----------------------------------------------------------->
 <section class="feedback">
     <div class="comment">
-        <h1>What students says about our university</h1>
-        <div class="prev-next">
-        <div class="arrow">
-            <a class="prev" href="#">! </a>
+        <div class="feedback-title">
+            <h1>What students says about our university</h1>
+
+            <div class="prev-next">
+                <div class="arrow">
+                    <a class="prev" href="#">! </a>
+                </div>
+                <div class="arrow">
+                    <a class="next" href="#">!</a>
+                </div>
+            </div>
         </div>
-        <div class="arrow">
-            <a class="next" href="#">!</a>
+
+        <div class="comment-text">
+            <p class="annotation">We guide our students to find their own academic paths by helping them to reason,
+                analyze and understand
+                in unprecedented ways. The undergraduate experience at Duke is characterized by a spirit of academic
+                energy,
+                exploration and challenge.</p>
+
+            <p class="author">— AMANDA PERSCH</p>
         </div>
-        </div>
-         <p class="comment-text">We guide our students to find their own academic paths by helping them to reason, analyze and understand
-            in unprecedented ways. The undergraduate experience at Duke is characterized by a spirit of academic energy,
-            exploration and challenge.</p>
-        <p class="author">— AMANDA PERSCH</p>
     </div>
 
 
-        <div class="get-started">
-            <p>Click here now to get started</p>
-            <a class="go" href="#"></a>
-        </div>
+    <div class="get-started">
+        <p>Click here now to get started</p>
+        <a class="go" href="#"></a>
+    </div>
 
 </section>
 <!-----------------------------------------------footer---------------------------------------------------------------->
 <footer>
-    <div class="social-block">
+    <div class="brand">
         <div class="logo-footer"></div>
         <h1 class="company-name">ABC university</h1>
+    </div>
+
+    <div class="footer-column-right">
         <div class="footer-social-networks">
             <p>Connect:</p>
             <a class="facebook" href="#"></a>
             <a class="google" href="#"></a>
             <a class="twitter" href="#"></a>
         </div>
-    </div>
 
-    <div class="copyright">
-        <p>&#169 2014 by ABC UNIVERSITY OF LIFE. Proudly created with unbounce.com. Design by Design-What.com</p>
+
+        <div class="copyright">
+            <p>&#169 2014 by ABC UNIVERSITY OF LIFE. Proudly created with unbounce.com. Design by Design-What.com</p>
+        </div>
     </div>
 </footer>
 

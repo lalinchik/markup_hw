@@ -1,3 +1,4 @@
+
 * {
     box-sizing: border-box;
 }
@@ -11,7 +12,7 @@ body {
 }
 
 /************************************   HEADER  ***********************************************************************/
-header {
+.main-header {
     height: 160px;
     background: #3498db;
     display: flex;
@@ -35,11 +36,6 @@ header {
     border-bottom: solid 2px #2980b9;
     padding-bottom: 4px;
     margin: 0;
-
-}
-
-.social-networks, .footer-social-networks {
-    width: 140px;
 
 }
 
@@ -103,7 +99,6 @@ header {
     border-bottom: 5px solid #3498db;
     background: #fff;
 
-
 }
 
 .form h2 {
@@ -115,7 +110,8 @@ header {
     margin-top: 26px;
     margin-bottom: 23px;
 }
-.login-form{
+
+.login-form {
     overflow: hidden;
 }
 
@@ -126,12 +122,13 @@ header {
     background: #f2f2f2;
     font-size: 15px;
     border: 1px solid #e6e6e6;
-    margin-left:  20px;
+    margin-left: 20px;
     margin-bottom: 9px;
     padding-left: 15px;
 
 }
-.form textarea{
+
+.form textarea {
     display: block;
     width: calc(100% - 40px);
     height: 75px;
@@ -151,8 +148,8 @@ header {
     border: 0;
     font-size: 16px;
     -webkit-appearance: none;
-    width: 268px;
     padding-left: 10px;
+    width: 100%;
 }
 
 .style-select {
@@ -165,21 +162,21 @@ header {
     margin-bottom: 9px;
 }
 
-
-textarea::-moz-placeholder{
-    color: #333;
-}
-input::-webkit-input-placeholder{
-    color: #333;
-}
-input:-moz-placeholder{
-    color: #333;
-}
-textarea::-webkit-input-placeholder{
+textarea::-moz-placeholder {
     color: #333;
 }
 
+input::-webkit-input-placeholder {
+    color: #333;
+}
 
+input:-moz-placeholder {
+    color: #333;
+}
+
+textarea::-webkit-input-placeholder {
+    color: #333;
+}
 
 .form input[type="submit"] {
     display: block;
@@ -222,7 +219,6 @@ textarea::-webkit-input-placeholder{
 
 /************************************   GOOD POINT ********************************************************************/
 .good-point {
-    padding-bottom: 46px;
     border-bottom: 1px solid #ededed;
     display: flex;
     flex-direction: column;
@@ -234,6 +230,10 @@ textarea::-webkit-input-placeholder{
     font-size: 20px;
     text-transform: uppercase;
     color: #3498db;
+}
+
+.point-column {
+    margin-bottom: 30px;
 }
 
 .point-img {
@@ -276,20 +276,13 @@ textarea::-webkit-input-placeholder{
     margin-top: 16px;
 }
 
-.point-column1 {
-    margin-bottom: 38px;
-}
-
-.point-column2 {
-    margin-bottom: 31px;
-}
-
 /************************************   FEED BACK ********************************************************************/
 .feedback {
     height: 745px;
     position: relative;
 }
-.feedback::after{
+
+.feedback::after {
     content: "";
     background-image: url("../img/feed-back/background.png");
     position: absolute;
@@ -308,11 +301,9 @@ textarea::-webkit-input-placeholder{
     text-align: center;
     margin: 34px 20px 15px 15px;
 }
-.prev-next{
-    width: 100px;
-    margin-bottom: 22px;
-    margin-left: auto;
-    margin-right: auto;
+
+.prev-next {
+    margin: 0 auto 22px auto;
 }
 
 .arrow {
@@ -324,9 +315,10 @@ textarea::-webkit-input-placeholder{
 
 }
 
-.arrow:hover{
-background: #f2f2f2;
+.arrow:hover {
+    background: #f2f2f2;
 }
+
 .next {
     background: url("../img/feed-back/sprites.png") no-repeat 0 -51px;
     width: 11px;
@@ -336,7 +328,6 @@ background: #f2f2f2;
     margin-left: 15px;
     margin-top: 10px;
 }
-
 
 .prev {
     background: url("../img/feed-back/sprites.png") no-repeat 0 -1px;
@@ -348,19 +339,19 @@ background: #f2f2f2;
     margin-top: 10px;
 }
 
-.arrow:hover > .next{
+.arrow:hover > .next {
     background: url("../img/feed-back/sprites.png") no-repeat -50px 0;
     width: 11px;
     height: 17px;
 }
 
-.arrow:hover > .prev{
+.arrow:hover > .prev {
     background: url("../img/feed-back/sprites.png") no-repeat -51px -50px;;
     width: 11px;
     height: 17px;
 }
 
-.comment-text {
+.annotation {
     font-size: 13px;
     line-height: 20px;
     color: #333;
@@ -376,7 +367,8 @@ background: #f2f2f2;
     text-align: right;
     margin-right: 20px;
 }
-.comment-text::before{
+
+.annotation::before {
     content: open-quote;
     font-size: 50px;
     font-weight: bold;
@@ -385,7 +377,7 @@ background: #f2f2f2;
     display: block;
 }
 
-.author::after{
+.author::after {
     content: close-quote;
     font-size: 50px;
     font-weight: bold;
@@ -395,9 +387,7 @@ background: #f2f2f2;
     margin-top: -10px;
 }
 
-
 /********************************************************************************************************/
-
 
 .get-started {
     position: relative;
@@ -440,12 +430,10 @@ footer {
 
 }
 
-
 .logo-footer {
     margin-top: 32px;
     margin-bottom: 10px;
 }
-
 
 .copyright {
     margin: 10px 40px 68px 40px;
@@ -458,3 +446,201 @@ footer {
     line-height: 19px;
 }
 
+/**************************************** WIDTH 800px*******************************************************/
+@media (min-width: 801px) {
+    .main-header {
+        height: 80px;
+        padding: 0 20px 0 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .brand{
+        display: flex;
+        align-items: center;
+
+
+    }
+    .logo {
+        margin-top: 0;
+        margin-right: 10px;
+    }
+
+    .company-name {
+        border-bottom: none;
+        margin-left: 0;
+        text-align: left;
+    }
+
+    .banner {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 20px 0 20px;
+    }
+
+    .banner p {
+        text-align: left;
+        margin-left: 0;
+        padding-right: calc(100% - 44.85% - 40px);
+
+    }
+
+    .form {
+        top: 110px;
+        left: calc(100% - 44.85% - 20px);
+        width: 44.85%;
+        padding: 0;
+    }
+
+    .about {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        height: 250px;
+        padding: 0 20px 0 20px;
+    }
+
+    .about h2 {
+        margin: 26px 0 24px 0;
+    }
+
+    .about p {
+        text-align: left;
+        margin: 0 0 25px 0;
+        padding-right: calc(100% - 44.85% - 30px);
+    }
+
+    .good-point {
+        align-items: flex-start;
+        padding: 0 20px 0 20px;
+    }
+
+    .point-column {
+        display: flex;
+    }
+
+    .description-benefits {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 22px;
+    }
+
+    .description-benefits p {
+        text-align: left;
+        margin-left: 0;
+    }
+
+    .point-view {
+        margin-left: 0;
+    }
+
+    .feedback {
+        height: 448px;
+        padding: 0 20px 0 20px;
+    }
+
+    .feedback::after {
+        left: calc(100% - 225px - 20px);
+    }
+
+    .comment {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .feedback-title {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .comment h1 {
+        margin-left: 0;
+    }
+
+    .prev-next {
+        align-self: flex-end;
+        margin-top: 30px;
+        margin-right: 0;
+    }
+
+    .comment-text {
+        padding-right: 225px;
+    }
+
+    .annotation {
+        margin-left: 0;
+    }
+
+    .author {
+        align-self: flex-end;
+    }
+
+    .get-started {
+        display: flex;
+        justify-content: space-between;
+        width: 470px;
+        height: 60px;
+        margin: 10px 0 0 0;
+    }
+
+    .get-started p {
+        text-align: left;
+        margin: 0 0 0 50px;
+    }
+
+    .go {
+        margin: auto 35px auto 0;
+
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background: #3498db;
+        height: 194px;
+        padding: 0 20px 0 20px;
+
+    }
+    footer .brand{
+        border-right: 1px solid #2980b9;
+    }
+
+    .logo-footer {
+        margin: 0 10px 0 0;
+        padding-right: 52px;
+    }
+
+    footer .company-name {
+        margin: 0;
+        text-align: left;
+    }
+
+    .footer-column-right {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding-left: 22px;
+    }
+    .footer-social-networks{
+        margin-top: -15px;
+    }
+
+    .copyright {
+        margin: 0;
+    }
+
+    .copyright p {
+        text-align: left;
+        margin: -10px 0 0 0;
+
+    }
+
+
+}
