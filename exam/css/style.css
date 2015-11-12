@@ -67,7 +67,7 @@ body {
 /************************************   BANNER  ***********************************************************************/
 .banner {
     width: 100%;
-    height: 375px;
+    height: 350px;
     background: url("../img/banner/big_banner.png") no-repeat;
 }
 
@@ -301,9 +301,11 @@ textarea::-webkit-input-placeholder {
     text-align: center;
     margin: 34px 20px 15px 15px;
 }
-
-.prev-next {
-    margin: 0 auto 22px auto;
+.feedback-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 22px;
 }
 
 .arrow {
@@ -434,6 +436,11 @@ footer {
     margin-top: 32px;
     margin-bottom: 10px;
 }
+.footer-column-right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .copyright {
     margin: 10px 40px 68px 40px;
@@ -531,10 +538,11 @@ footer {
     .description-benefits p {
         text-align: left;
         margin-left: 0;
+        margin-right: 0;
     }
 
     .point-view {
-        margin-left: 0;
+        margin: 0;
     }
 
     .feedback {
@@ -556,17 +564,14 @@ footer {
         display: flex;
         flex-direction: row;
         width: 100%;
+        justify-content: space-between;
     }
 
     .comment h1 {
         margin-left: 0;
     }
 
-    .prev-next {
-        align-self: flex-end;
-        margin-top: 30px;
-        margin-right: 0;
-    }
+
 
     .comment-text {
         padding-right: 225px;
@@ -615,11 +620,13 @@ footer {
         margin: 0 10px 0 0;
         padding-right: 52px;
     }
-
-    footer .company-name {
-        margin: 0;
-        text-align: left;
+    .brand {
+        display: flex;
     }
+    .brand .company-name{
+        flex-basis: 67%;
+    }
+
 
     .footer-column-right {
         display: flex;
@@ -640,6 +647,73 @@ footer {
         text-align: left;
         margin: -10px 0 0 0;
 
+    }
+}
+@media (min-width: 1001px) {
+    .main-header{
+        padding-left: calc((100% - 990px)/2);
+        padding-right: calc((100% - 990px)/2);
+    }
+    .banner{
+        padding-left: calc((100% - 990px)/2);
+        padding-right: calc((100% - 990px)/2);
+    }
+    .banner p {
+        padding-right: calc(100% - 36.36% - 78px);
+    }
+    .form{
+        width: 36.36%;
+        left: calc(100% - 36.36% - ((100% - 990px)/2));
+    }
+    .about{
+        padding-left: calc((100% - 990px)/2);
+        padding-right: calc((100% - 990px)/2);
+    }
+    .about p{
+        padding-right: calc(100% - 36.36% - 55px);
+    }
+    .good-point{
+        padding-left: calc((100% - 990px)/2);
+        padding-right: calc((100% - 990px)/2);
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .point-column{
+        flex-direction: column;
+        flex-basis: calc((100% - 120px)/3);
+        align-items: center;
+        margin-right: 60px;
+    }
+    .point-column:last-child{
+        margin-right: 0;
+    }
+
+    .good-point h1{
+        flex-basis: 100%;
+    }
+    .point-img{
+        margin-left: 0;
+    }
+    .description-benefits{
+        align-items: center;
+        padding-left: 0;
+    }
+    .description-benefits p{
+        text-align: center;
+    }
+
+
+    .feedback{
+        padding-left: calc((100% - 990px)/2);
+        padding-right: calc((100% - 990px)/2);
+    }
+    .feedback::after {
+        left: calc(100% - 225px - 28px - ((100% - 990px)/2));
+    }
+    footer{
+        padding-left: calc((100% - 990px)/2);
+        padding-right: calc((100% - 990px)/2);
     }
 
 
