@@ -220,12 +220,14 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-wrap: wrap;
 
     h2 {
       font-weight: 100;
       font-size: 20px;
       text-transform: uppercase;
       color: #3498db;
+      flex-basis: 100%;
     }
     .point-column {
       margin-bottom: 30px;
