@@ -1,0 +1,32 @@
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+
+nav{
+    background-color: #a64dff;
+}
+menu{
+    width: 900px;
+    margin: 0 auto;
+}
+
+li{
+    display: inline-block;
+    float: left;
+    list-style-type: none;
+    margin:0;
+    padding:10px 15px;
+}
+li:last-child{
+    float: right;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-family: Oswald, sans-serif;
+    font-size: 18px;
+}
+li:hover{
+    background: #eeeeee;
+}
+li:hover a {
+    color: #aeafbd;
+}
